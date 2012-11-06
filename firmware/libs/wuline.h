@@ -8,6 +8,7 @@ void draw_line(
 	uint8_t g,
 	uint8_t b );
 
+void blank_screen();
 
 
 #endif

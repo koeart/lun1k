@@ -110,6 +110,16 @@ void draw_line(
 		}
 	}
 }
+
+void blank_screen(){
+    uint16_t zaehler = 0;
+    while (zaehler < LED_HEIGHT)
+    {
+        draw_line(0, zaehler, LED_WIDTH, zaehler, 0, 0, 0);
+        zaehler++;
+    }
+}
+
 #undef swap_
 #undef ipart_
 #undef fpart_

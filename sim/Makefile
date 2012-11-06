@@ -14,7 +14,8 @@ ifeq ($(UNAME), Darwin)
 endif
 
 ifeq ($(UNAME), Linux)
-	LDFLAGS +=  -lSDL -lSDL_image
+	FLAGS   += `sdl-config --cflags`
+	LDFLAGS += -lSDL -lSDL_image
 endif
 
 ifeq ($(UNAME), MINGW32_NT-6.1)

@@ -12,7 +12,7 @@ uint8_t zaehler = 0;
 
 uint8_t text_x = 0;
 uint8_t text_y = 0;
-uint8_t text_r = 0;
+uint8_t text_r = 255;
 uint8_t text_g = 0;
 uint8_t text_b = 0;
 
@@ -38,6 +38,7 @@ static uint8_t tick(char* nick) {
         text_g = randr(0,255);
         text_b = randr(0,255);
         draw_text_16pt(text_x, text_y, "hello koeart", text_r , text_g,text_b);
+        zaehler = 0;
 
     }
 
